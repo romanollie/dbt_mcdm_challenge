@@ -24,7 +24,6 @@ WITH stg_bing AS (
             ,spend
             ,conv AS total_conversions
             ,NULL AS video_views
-
     FROM {{ ref('src_ads_bing_all_data') }}
 )
 
