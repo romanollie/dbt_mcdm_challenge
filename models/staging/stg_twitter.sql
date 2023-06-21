@@ -24,7 +24,6 @@ WITH stg_twitter AS (
             ,spend
             ,NULL AS total_conversions
             ,video_total_views AS video_views
-
     FROM {{ ref('src_promoted_tweets_twitter_all_data') }}
 )
 

@@ -24,7 +24,6 @@ WITH stg_tiktok AS (
             ,spend
             ,(conversions + skan_conversion) AS total_conversions
             ,video_views
-
     FROM {{ ref('src_ads_tiktok_ads_all_data') }}
 )
 

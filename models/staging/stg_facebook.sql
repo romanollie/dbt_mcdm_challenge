@@ -24,7 +24,6 @@ WITH stg_facebook AS (
             ,spend
             ,purchase AS total_conversions
             ,views AS video_views
-
     FROM {{ ref('src_ads_creative_facebook_all_data') }}
 )
 
