@@ -22,10 +22,7 @@ WITH stg_facebook AS (
             ,purchase_value AS revenue
             ,shares
             ,spend
-            ,CASE 
-                WHEN UPPER(objective) = 'CONVERSIONS' THEN 1
-                ELSE NULL
-            END AS total_conversions
+            ,purchase AS total_conversions
             ,views AS video_views
 
     FROM {{ ref('src_ads_creative_facebook_all_data') }}
